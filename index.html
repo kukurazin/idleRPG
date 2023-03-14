@@ -1,0 +1,92 @@
+
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    </head>
+    <body>
+        <script src="index.js" type="text/babel"></script>
+        <div id="Header">
+            Idle RPG
+        </div>
+        <div id="chosing">
+            Choose your class:
+            <button id="warriorChosed">
+                <div style="font-weight: bold; color: rgb(229, 229, 229); border: none;">
+                    Warrior:
+                    <div style="font-weight: normal; border: none;">
+                        str: 5 <br>
+                        int: 2 <br>
+                        agi: 4 <br>
+                        stam: 7 <br>
+                        spi: 1
+                    </div>
+                </div>
+            </button>
+            <button id="mageChosed">
+                <div style="font-weight: bold; color: rgb(229, 229, 229); border: none;">
+                    Mage:
+                    <div style="font-weight: normal; border: none;">
+                        str: 2 <br>
+                        int: 5 <br>
+                        agi: 2 <br>
+                        stam: 4 <br>
+                        spi:4
+                    </div>
+                </div>
+            </button>
+        </div>
+        <div id="mainScreen">
+            <div id="stats">
+                STATS:
+                <ul style="color: red">
+                    STRENGTH: <div id="str"></div>
+                </ul>
+                <ul style="color: rgb(64, 0, 255)">
+                    INTELLECT: <p id="int"></p>
+                </ul>
+                <ul style="color: rgb(0, 255, 17)">
+                    AGILITY: <p id="agi"></p>
+                </ul>
+                <ul style="color: rgb(0, 251, 255)">            
+                    STAMINA: <p id="stam"></p>
+                </ul>
+                <ul style="color: rgb(255, 255, 0)">
+                    SPIRIT: <p id="spi"></p>
+                </ul>
+            </div>
+            <div id="combatScreen">
+                <div id="hpS">
+                    <div id="yourHp">
+                        You: <div id="hpText" style="display: inline;"></div>
+                        <div id="fill-bar-hp">
+                            <div id="hp%" style="text-align: center;"></div>
+                            <div id="fill-bar-hp-progress"></div>
+                        </div>
+                    </div>
+                    <div id="enemyHp">
+                        Enemy:  
+                        <div id="enHpText" style="display: inline;"></div>
+                        <div id="fill-bar-en-hp">
+                            <div id="en-hp%" style="text-align: center;"></div>
+                            <div id="fill-bar-en-hp-progress"></div>
+                        </div>
+                        <div id="enemyName"></div>
+                    </div>
+                </div>
+                <div id="expiBar">
+                    Level:<div id="levelCounter" style="display: inline;"></div>
+                    EXP:<div id="expText" style="display: inline;"></div>
+                    <div id="fill-bar-exp">
+                        <div id="expPerc" style="text-align: center;"></div>
+                        <div id="fill-bar-exp-progress"></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>

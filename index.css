@@ -1,0 +1,144 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(37, 25, 35);
+}
+
+#header {
+    color: red;
+    margin: 10px 0px;
+    padding-left: 120px;
+    padding-right: 120px;
+    font-family: courier;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+#mainScreen {
+    background-color: rgb(67, 67, 67);
+    color: rgb(173, 173, 173);
+    height: 300px;
+    width: 100%;
+    margin: 10px 0px;
+    padding-left: 120px;
+    padding-right: 120px;
+    font-family: courier;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+#warriorChosed {
+    height: 140px;
+    width: 90px;
+    text-align: left;
+    border: 3px solid white;
+    font-size: 18px;
+    background-color: rgba(102, 0, 0, 0.21);
+}
+
+#mageChosed {
+    height: 140px;
+    width: 90px;
+    text-align: left;
+    border: 3px solid white;
+    font-size: 18px;
+    background-color: rgb(0, 151, 174);
+}
+
+#str, #int, #agi, #stam, #spi  {
+    display: inline;
+  }
+
+#chosing {
+    color: antiquewhite;
+    font-size: 30px;
+    background: rgb(53, 34, 47);
+    margin: 10px 0px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+#expiBar {
+    display: block;
+    position: absolute; 
+    bottom: 10px;
+    left: 10px;
+}
+
+#expPerc {
+    position: absolute;
+    left: 40%;
+}
+
+#fill-bar-exp {
+    width: 200px;
+    height: 20px;
+    background-color: #eee;
+    border-radius: 10px;
+}
+
+#fill-bar-exp-progress {
+    height: 100%;
+    background-color: rgb(100, 0, 85);
+    border-radius: 10px;
+    transition: width 0.3s ease-in-out;
+}
+
+#yourHp {
+    display: block;
+    position: absolute; 
+    top: 10px;
+    left: 10px;
+}
+
+#fill-bar-hp {
+    width: 250px;
+    height: 5px;
+    background-color: #eee;
+    border-radius: 10px;
+}
+
+#fill-bar-hp-progress {
+    height: 100%;
+    background-color: rgb(0, 100, 7);
+    border-radius: 10px;
+    transition: width 0.3s ease-in-out;
+}
+
+#enemyHp {
+    display: block;
+    position: absolute; 
+    top: 10px;
+    right: 10px;
+}
+
+#fill-bar-en-hp {
+    width: 250px;
+    height: 5px;
+    background-color: #eee;
+    border-radius: 10px;
+}
+
+#fill-bar-en-hp-progress {
+    height: 100%;
+    background-color: rgb(0, 86, 6);
+    border-radius: 10px;
+    transition: width 0.3s ease-in-out;
+}
+
+#combatScreen {
+    color: black;
+    background-color: rgb(103, 103, 103);
+    height: 300px;
+    width: 700px;
+    float: right;
+    position: relative;
+    right: 230px;
+}
+
+#stats {
+    float: left;
+    margin-top: 20px;
+}
